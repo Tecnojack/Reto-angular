@@ -1,0 +1,20 @@
+<div class="header">
+  <div class="">
+    <div class="title">
+      <h1>USUARIOS GITHUB </h1>
+    </div>
+
+  </div>
+</div>
+<form>
+  <div class="searchBox">
+    <div class="search_container">
+      <i class="bi bi-search form-control-feedback"></i>
+      <input [formControl]="findControl" type="text" type="text" class="search" placeholder="Buscar">
+    </div>
+    <br>
+    <app-all-users *ngIf="all" [users]="allUsers"></app-all-users>
+    <app-users *ngIf="user" [user]="user"></app-users>
+    <app-error *ngIf="error"></app-error>
+  </div>
+</form>

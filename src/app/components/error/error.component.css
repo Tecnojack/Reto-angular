@@ -1,0 +1,14 @@
+.error {
+  background-color: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  text-align: center;
+
+}
+.image{
+  width: 20%
+}
+h1{
+color: slateblue;
+}
