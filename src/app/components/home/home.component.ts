@@ -14,10 +14,15 @@ import { AllUser } from 'src/app/models/allUsers.model';
 export class HomeComponent implements OnInit {
 
   constructor(private githubService: GithubService) { }
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   allUsers: AllUser;
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   findControl = new FormControl();
-  error: boolean = false;
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  error = false;
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   user: User = null;
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   all = true;
   ngOnInit() {
     this.githubService.getAllUsers().then(users => {
@@ -33,12 +38,12 @@ export class HomeComponent implements OnInit {
             catchError(err => {
               this.user = null;
               this.error = true;
-              this.all = false
+              this.all = false;
               return EMPTY;
             })))
 
       ).subscribe(user => {
-        this.all = false
+        this.all = false;
         this.user = user;
         this.error = false;
       });

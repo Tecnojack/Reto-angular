@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
-import { HttpClient } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../models/user.model';
 
@@ -25,9 +25,7 @@ export class GithubService {
     return this.http
       .get<User>(url)
       .toPromise()
-      .then((data) => {
-        return data ;
-      });
+      .then((data) => data);
   }
 
 }

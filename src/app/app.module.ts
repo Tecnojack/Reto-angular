@@ -10,6 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorComponent } from './components/error/error.component';
 import { AllUsersComponent } from './components/all-users/all-users.component';
 import { ChartsModule } from 'ng2-charts';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ChartsModule } from 'ng2-charts';
     HomeComponent,
     UsersComponent,
     ErrorComponent,
-    AllUsersComponent
+    AllUsersComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

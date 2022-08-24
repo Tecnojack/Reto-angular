@@ -9,6 +9,7 @@ import { User } from '../../models/user.model';
 export class UsersComponent implements OnInit {
 
   constructor() { }
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   @Input() user: User;
   ngOnInit() {
     console.log(this.user);

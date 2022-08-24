@@ -1,13 +1,10 @@
 export class AllUser {
   login: string;
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   avatar_url: string;
-  created_at: string;
   location: string;
   bio: string;
-  public_repos: string;
-  public_gists: string;
   name: string;
   followers: any;
-  html_url:string;
-  id: number
+  id: number;
 }

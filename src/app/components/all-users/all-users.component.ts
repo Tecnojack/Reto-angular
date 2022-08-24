@@ -17,6 +17,7 @@ export class AllUsersComponent implements OnInit {
   chart: any = [];
 
   constructor() { }
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   @Input() users: AllUser;
   ngOnInit() {
 
