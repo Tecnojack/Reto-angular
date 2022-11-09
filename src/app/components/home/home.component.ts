@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.githubService.getAllUsers().then(users => {
       this.allUsers = users;
-      console.log(this.allUsers)
+      console.log(this.allUsers);
     });
 
     this.findControl.valueChanges

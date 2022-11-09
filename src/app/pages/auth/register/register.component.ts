@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from 'src/app/services/general.service';
 
 @Component({
   selector: 'app-register',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
 
+  constructor(private generalSvc: GeneralService) {
+    this.generalSvc.setHeader(false);
+  }
   ngOnInit(): void {
   }
 
